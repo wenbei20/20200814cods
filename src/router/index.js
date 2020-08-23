@@ -8,6 +8,7 @@ import Layout from '@/layout'
 
 /* Router Modules */
 import dataManageRouter from './modules/dataManage'
+import dataComparisonRouter from './modules/dataComparison'
 // import componentsRouter from './modules/components'
 // import chartsRouter from './modules/charts'
 // import tableRouter from './modules/table'
@@ -79,6 +80,7 @@ export const constantRoutes = [
  */
 export const asyncRoutes = [
   dataManageRouter,
+  dataComparisonRouter,
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/dataManage/unifiedCode', hidden: true }
