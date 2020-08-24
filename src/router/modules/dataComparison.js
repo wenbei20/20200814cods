@@ -23,6 +23,18 @@ const dataComparisonRouter = {
       component: () => import('@/views/dataComparison/dataCompare'),
       name: 'DataCompare',
       meta: { title: '数据比对' }
+    },
+    {
+      path: 'comparisonResultQuery',
+      component: () => import('@/views/dataComparison/comparisonResultQuery'),
+      name: 'ComparisonResultQuery',
+      meta: { title: '比对结果查询' }
+    },
+    {
+      path: 'comparisonResultStatistics',
+      component: () => import('@/views/dataComparison/comparisonResultStatistics'),
+      name: 'ComparisonResultStatistics',
+      meta: { title: '比对结果统计' }
     }
   ]
 }

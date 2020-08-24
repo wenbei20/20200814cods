@@ -11,7 +11,7 @@
             class="filter-item"
           >
             <el-option
-              v-for="item in form.taskSrouce"
+              v-for="item in form.taskSource"
               :key="item"
               :label="item"
               :value="item"
@@ -97,7 +97,7 @@ export default {
       ],
       form: {
         taskName: undefined,
-        taskSrouce: [1, 2, 3],
+        taskSource: [1, 2, 3],
         fileName: ''
       },
       tableHeader: [
