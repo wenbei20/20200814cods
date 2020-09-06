@@ -5,7 +5,6 @@
     <el-table
       v-loading="tableDataLoading"
       :data="tableData"
-      :show-header="false"
       :height="'calc(100vh - 240px)'"
       border
       style="margin-bottom: 20px;"
@@ -20,7 +19,7 @@
           <div v-if="editable && index % 2 === 1">
             <el-input :value="scope.row[th.key]" />
           </div>
-          <div v-else :style="{ fontWeight: index % 2 === 0 ? 800 : 400 }">
+          <div v-else :class="{ tdTitle: index % 2 === 0 }">
             {{ scope.row[th.key] }}
           </div>
         </template>
@@ -68,12 +67,12 @@ export default {
       },
       editable: false,
       tableHeader: [
-        { key: 'fieldTitle1', name: '字段1' },
-        { key: 'fieldContent1', name: '内容1' },
-        { key: 'fieldTitle2', name: '字段2' },
-        { key: 'fieldContent2', name: '内容2' },
-        { key: 'fieldTitle3', name: '字段3' },
-        { key: 'fieldContent3', name: '内容3' }
+        { key: 'fieldTitle1', name: '原始字段' },
+        { key: 'fieldContent1', name: '数据内容' },
+        { key: 'fieldTitle2', name: '质量处理字段' },
+        { key: 'fieldContent2', name: '数据内容' },
+        { key: 'fieldTitle3', name: '标准化处理字段' },
+        { key: 'fieldContent3', name: '数据内容' }
       ],
       tableData: [
         {
@@ -161,3 +160,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.el-table{
+  ::v-deep{
+    th{ background-color: #304156; color: #fff; border-color: #263344;}
+    tr {
+      td:nth-of-type(odd){ background: #f5f9fd;}
+    }
+    .tdTitle{ color: #409eff; }
+  }
+}
+</style>

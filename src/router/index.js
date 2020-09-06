@@ -7,6 +7,7 @@ Vue.use(Router)
 import Layout from '@/layout'
 
 /* Router Modules */
+import homeRouter from './modules/home'
 import dataManageRouter from './modules/dataManage'
 import dataComparisonRouter from './modules/dataComparison'
 // import componentsRouter from './modules/components'
@@ -79,6 +80,7 @@ export const constantRoutes = [
  * the routes that need to be dynamically loaded based on user roles
  */
 export const asyncRoutes = [
+  homeRouter,
   dataManageRouter,
   dataComparisonRouter,
 
