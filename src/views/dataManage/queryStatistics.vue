@@ -134,17 +134,17 @@ export default {
         { key: 'col9', name: 'jyzt' }
       ],
       tableData: [
-        {
-          col1: '--',
-          col2: '--',
-          col3: '--',
-          col4: '--',
-          col5: '--',
-          col6: '--',
-          col7: '--',
-          col8: '--',
-          col9: '--'
-        }
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' },
+        { col1: '--', col2: '--', col3: '--', col4: '--', col5: '--', col6: '--', col7: '--', col8: '--', col9: '--' }
       ],
       pageIndex: 1,
       pageSize: 10,
